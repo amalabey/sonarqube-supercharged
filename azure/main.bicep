@@ -52,22 +52,6 @@ resource webApp 'Microsoft.Web/sites@2016-08-01' = {
           name: 'WEBSITES_PORT'
           value: '9000'
         }
-        // {
-        //   name: 'SONARQUBE_JDBC_URL'
-        //   value: 'jdbc:postgresql://${dbServer.properties.fullyQualifiedDomainName}:5432/${dbName}?user=${jdbcSonarUserName}&password=${dbAdminPassword}&ssl=true'
-        // }
-        // {
-        //   name: 'SONARQUBE_JDBC_USERNAME'
-        //   value: jdbcSonarUserName
-        // }
-        // {
-        //   name: 'SONARQUBE_JDBC_PASSWORD'
-        //   value: dbAdminPassword
-        // }
-        // {
-        //   name: 'SONAR_ES_BOOTSTRAP_CHECKS_DISABLE'
-        //   value: 'true'
-        // }
       ]
       linuxFxVersion: 'DOCKER|amalabey/sonarqube-supercharged:9.5-community'
     }
@@ -109,7 +93,7 @@ resource fireWallRules 'Microsoft.DBforPostgreSQL/servers/firewallRules@2017-12-
   parent: dbServer
   properties: {
     startIpAddress: '0.0.0.0'
-    endIpAddress: '255.255.255.255'
+    endIpAddress: '0.0.0.0'
   }
 }
 
