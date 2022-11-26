@@ -89,7 +89,7 @@ resource webApp 'Microsoft.Web/sites@2016-08-01' = {
           value: '9000'
         }
       ]
-      linuxFxVersion: 'DOCKER|amalabey/sonarqube-supercharged:9.5.1'
+      linuxFxVersion: 'DOCKER|amalabey/sonarqube-supercharged:9.5.2'
     }
     serverFarmId: servicePlan.id  
   }

@@ -1,7 +1,7 @@
 FROM sonarqube:9.5-community
 
 ENV BRANCH_PLUGIN_VERSION=1.12.0
-ENV EXTANALYZER_PLUGIN_VERSION=0.0.15
+ENV EXTANALYZER_PLUGIN_VERSION=0.0.16
 ENV DEPCHECK_PLUGIN_VERSION=3.0.1
 
 ADD --chown=sonarqube:sonarqube https://github.com/mc1arke/sonarqube-community-branch-plugin/releases/download/${BRANCH_PLUGIN_VERSION}/sonarqube-community-branch-plugin-${BRANCH_PLUGIN_VERSION}.jar /opt/sonarqube/extensions/plugins/
