@@ -25,9 +25,9 @@ resource dbServer 'Microsoft.DBforPostgreSQL/servers@2017-12-01' = {
   name: dbServerName
   location: location
   sku: {
-    name: 'GP_Gen5_2'
-    tier: 'GeneralPurpose'
-    capacity: 2
+    name: 'B_Gen5_1'
+    tier: 'Basic'
+    capacity: 1
     size: '51200'
     family: 'Gen5'
   }
