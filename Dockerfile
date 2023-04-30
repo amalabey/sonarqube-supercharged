@@ -11,6 +11,6 @@ ENV SONAR_CE_JAVAADDITIONALOPTS="-javaagent:./extensions/plugins/sonarqube-commu
 
 ADD --chown=sonarqube:sonarqube https://github.com/amalabey/sonar-external-analyzer/releases/download/release-${EXTANALYZER_PLUGIN_VERSION}/sonar-external-analyzer-${EXTANALYZER_PLUGIN_VERSION}.jar /opt/sonarqube/extensions/plugins/
 ADD --chown=sonarqube:sonarqube https://github.com/dependency-check/dependency-check-sonar-plugin/releases/download/${DEPCHECK_PLUGIN_VERSION}/sonar-dependency-check-plugin-${DEPCHECK_PLUGIN_VERSION}.jar /opt/sonarqube/extensions/plugins/
-ADD --chown=sonarqube:sonarqube https://github.com/Idean/sonar-swift/releases/download/${SONAR_SWIFT_PLUGIN_VERSION}/backelite-sonar-swift-plugin-${SONAR_SWIFT_PLUGIN_VERSION}}.jar /opt/sonarqube/extensions/plugins/
+ADD --chown=sonarqube:sonarqube https://github.com/Idean/sonar-swift/releases/download/${SONAR_SWIFT_PLUGIN_VERSION}/backelite-sonar-swift-plugin-${SONAR_SWIFT_PLUGIN_VERSION}.jar /opt/sonarqube/extensions/plugins/
 
 
